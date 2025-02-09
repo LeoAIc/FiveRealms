@@ -1,0 +1,21 @@
+.cd {
+    
+    background: url('/logoblue.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  .rotating {
+    animation: rotation 2s linear infinite;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

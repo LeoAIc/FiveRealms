@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+ 
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+ 
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+ 
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+ 
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+ 
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+ 
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  transition: background 0.5s ease-in-out;
+}
+
+
+.btn-skew {
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-skew::before,
+.btn-skew::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 0;
+  transform: skew(30deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-skew::before {
+  top: -5px;
+  left: -2px;
+  background-color: #f43f5e;
+}
+
+.btn-skew::after {
+  top: 5px;
+  right: -2px;
+  background-color: #1e40af;
+}
+
+.btn-skew:is(:hover, :focus)::before {
+  top: 0px;
+  left: 50%;
+  transform: skew(0deg);
+}
+
+.btn-skew:is(:hover, :focus)::after {
+  top: 0;
+  right: 50%;
+  transform: skew(0deg);
+}
+
+@font-face {
+  font-family: 'GLY';
+  src: url('/totallyglyphicot-reg-webfont.woff2') format('woff2'),
+       url('/totallyglyphicot-reg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'GOR';
+  src: url('/totallygothicot-reg-webfont.woff2') format('woff2'),
+       url('/totallygothicot-reg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'GOW';
+  src: url('/totallygothicot-widecaps-webfont.woff2') format('woff2'),
+       url('/totallygothicot-widecaps-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html { scrollbar-width: none; } /* Firefox */
+body { -ms-overflow-style: none; } /* IE and Edge */
+body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+
+.fOhchX{
+  height: 40px !important;
+  font-weight: 600 !important;
+  padding: 0 16px !important;
+  border-radius: 3px !important;
+}
+
+.doTYz{
+  display: none !important;
+}
+
+.TNNpL {
+  display: none !important;
+}
+
+.IACKs{
+  display: none !important;
+}
+
+.cInLei{
+  width: 90px !important;
+  font-weight: 600 !important;
+  overflow: visible !important;
+}
+.RZRrD .wrap{
+  gap: 20px !important;
+}
+.jspNmX .wrap{
+  gap: 20px !important;
+}
